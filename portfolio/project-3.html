@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Tableau — Krisdova Rio Alvonsa</title>
+  <meta name="description" content="Dashboard Tableau." />
+  <meta property="og:title" content="Dashboard Tableau — Krisdova Rio Alvonsa" />
+  <meta property="og:description" content="Dashboard Tableau." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="../../favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/tailwind.config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="bg-background font-sans text-secondary antialiased">
+<header id="navbar" class="fixed top-0 left-0 z-50 w-full border-b border-black/5 bg-white/80 backdrop-blur-md">
+  <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+    <a href="../index.html" class="text-lg font-extrabold tracking-tight text-secondary">Kris<span class="text-primary">dova</span></a>
+    <ul class="hidden items-center gap-8 md:flex">
+      <li><a class="nav-link" href="../index.html#home">Home</a></li>
+      <!-- <li><a class="nav-link" href="../index.html#about">About</a></li> -->
+      <li><a class="nav-link" href="../index.html#portfolio">Portfolio</a></li>
+      <li><a class="nav-link" href="../index.html#contact">Contact</a></li>
+    </ul>
+    <button id="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-secondary md:hidden">
+      <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg id="icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+  <div id="mobile-menu" class="hidden border-t border-black/5 bg-white md:hidden">
+    <ul class="space-y-1 px-4 py-3">
+      <li><a class="mobile-link" href="../index.html#home">Home</a></li>
+      <!-- <li><a class="mobile-link" href="../index.html#about">About</a></li> -->
+      <li><a class="mobile-link" href="../index.html#portfolio">Portfolio</a></li>
+      <li><a class="mobile-link" href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+<main class="mx-auto max-w-4xl px-4 pt-28 pb-20">
+  <a href="../index.html#portfolio" class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 8H2M7 3L2 8l5 5"/></svg>
+    Kembali
+  </a>
+  <article class="animate-fade-in-up mt-6">
+    <span class="badge-cat">Tableau</span>
+    <h1 class="mt-4 text-3xl font-bold tracking-tight text-secondary sm:text-4xl">Dashboard Tableau Penyewaan Airbnb</h1>
+    <!-- <p class="mt-4 text-base text-muted-foreground">Interactive dashboard for sales performance.</p> -->
+    <div class="mt-8 overflow-hidden rounded-2xl bg-muted shadow-soft">
+      <img src="../images/Dashboard Tableau.png" alt="Dashboard Tableau" class="w-full object-cover" />
+    </div>
+    <section class="mt-10">
+      <h2 class="text-xl font-bold text-secondary">Project Overview</h2>
+      <p class="mt-3 leading-relaxed text-muted-foreground">Dashboard interaktif untuk menganalisis data listing Airbnb di Seattle, mencakup harga rata-rata, distribusi properti, pendapatan tahunan, dan persebaran lokasi guna mengidentifikasi pola pasar properti sewa.</p>
+    </section>
+    <div class="mt-10 grid gap-6 sm:grid-cols-2">
+      <section class="card-soft rounded-2xl bg-white p-6">
+        <h2 class="text-lg font-bold text-secondary">Technology</h2>
+        <ul class="mt-4 flex flex-wrap gap-2">
+          <li class="badge-skill">Tableau</li>
+          <!-- <li class="badge-skill">DAX</li>
+          <li class="badge-skill">Power Query</li>
+          <li class="badge-skill">SQL</li> -->
+        </ul>
+      </section>
+      <section class="card-soft rounded-2xl bg-white p-6">
+        <h2 class="text-lg font-bold text-secondary">Lihat Project</h2>
+        <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
+          <li class="flex items-start gap-2"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"></span><a href="https://public.tableau.com/views/DashboardAirbnbTableauProject/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="underline hover:text-primary">Tableau Public Dashboard</a></li>
+          <!-- <li class="flex items-start gap-2"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"></span>Drill-down Analysis</li>
+          <li class="flex items-start gap-2"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"></span>Dynamic Filters</li>
+          <li class="flex items-start gap-2"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"></span>Automated Refresh</li> -->
+        </ul>
+      </section>
+    </div>
+    <!-- <section class="mt-14">
+      <h2 class="text-xl font-bold text-secondary">Other Projects</h2>
+      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <a href="project-1.html" class="card-soft overflow-hidden rounded-2xl bg-white">
+          <div class="aspect-[16/10] overflow-hidden bg-muted"><img src="../images/p1.jpg" alt="Diabetes Prediction using AdaBoost" loading="lazy" class="h-full w-full object-cover" /></div>
+          <div class="p-5"><span class="badge-cat">Machine Learning</span><h3 class="mt-2 text-base font-bold text-secondary">Diabetes Prediction using AdaBoost</h3></div>
+        </a>
+        <a href="project-2.html" class="card-soft overflow-hidden rounded-2xl bg-white">
+          <div class="aspect-[16/10] overflow-hidden bg-muted"><img src="../images/p2.jpg" alt="PDAM Pipeline GIS Mapping" loading="lazy" class="h-full w-full object-cover" /></div>
+          <div class="p-5"><span class="badge-cat">GIS</span><h3 class="mt-2 text-base font-bold text-secondary">PDAM Pipeline GIS Mapping</h3></div>
+        </a>
+        <a href="project-4.html" class="card-soft overflow-hidden rounded-2xl bg-white">
+          <div class="aspect-[16/10] overflow-hidden bg-muted"><img src="../images/p4.jpg" alt="Excel Automation" loading="lazy" class="h-full w-full object-cover" /></div>
+          <div class="p-5"><span class="badge-cat">Excel VBA</span><h3 class="mt-2 text-base font-bold text-secondary">Excel Automation</h3></div>
+        </a>
+      </div>
+    </section> -->
+  </article>
+</main>
+<footer class="bg-secondary py-8 text-center text-sm text-white/70">
+  <p>&copy; 2026 Krisdova Rio Alvonsa. All rights reserved.</p>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

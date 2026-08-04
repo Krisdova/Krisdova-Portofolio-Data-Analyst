@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krisdova Rio Alvonsa — Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Krisdova Rio Alvonsa" />
+  <meta property="og:title" content="Krisdova Rio Alvonsa — Portfolio" />
+  <meta property="og:description" content="Portfolio of Krisdova Rio Alvonsa" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="../favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/tailwind.config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="bg-background font-sans text-secondary antialiased">
+<header id="navbar" class="fixed top-0 left-0 z-50 w-full border-b border-black/5 bg-white/80 backdrop-blur-md">
+  <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+    <a href="./index.html" class="text-lg font-extrabold tracking-tight text-secondary">Kris<span class="text-primary">dova</span></a>
+    <ul class="hidden items-center gap-8 md:flex">
+      <li><a class="nav-link" href="#home">Home</a></li>
+      <!-- <li><a class="nav-link" href="#about">About</a></li> -->
+      <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+    <button id="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-secondary md:hidden">
+      <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg id="icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+  <div id="mobile-menu" class="hidden border-t border-black/5 bg-white md:hidden">
+    <ul class="space-y-1 px-4 py-3">
+      <li><a class="mobile-link" href="#home">Home</a></li>
+      <!-- <li><a class="mobile-link" href="#about">About</a></li> -->
+      <li><a class="mobile-link" href="#portfolio">Portfolio</a></li>
+      <li><a class="mobile-link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+<main>
+  <section id="home" class="flex min-h-screen flex-col items-center justify-center px-4 pt-24 pb-16 text-center">
+    <div class="mx-auto max-w-4xl animate-fade-in-up">
+      <!-- <p class="mb-4 text-sm font-semibold tracking-[0.2em] text-primary uppercase">Data Analyst</p> -->
+      <h1 class="text-4xl font-bold tracking-tight text-secondary sm:text-6xl lg:text-7xl">Krisdova Rio Alvonsa</h1>
+      <!-- <p class="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg">Turning raw data into clear, actionable insight through analysis, visualization, and machine learning.</p> -->
+      <ul class="mt-10 flex flex-wrap justify-center gap-2.5">
+        <li class="badge-skill">Data Analysis</li>
+        <li class="badge-skill">Data Visualization</li>
+        <li class="badge-skill">Microsoft Excel</li>
+        <li class="badge-skill">SQL</li>
+        <li class="badge-skill">Tableau</li>
+        <li class="badge-skill">Power BI</li>
+        <li class="badge-skill">Python</li>
+        <li class="badge-skill">Statistics</li>
+        <li class="badge-skill">Dashboard Development</li>
+      </ul>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <a href="#portfolio" class="btn-primary">Portfolio</a>
+        <!-- <a href="#contact" class="btn-ghost">Contact Me</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="about" class="border-t border-black/5 px-4 py-20 sm:py-24">
+    <div class="reveal mx-auto max-w-3xl text-center">
+      <h2 class="text-3xl font-bold text-secondary sm:text-4xl">About Me</h2>
+      <p class="mt-6 text-base leading-relaxed text-muted-foreground">Saya seorang Data Analyst yang berfokus pada pengolahan data, visualisasi, dan pemodelan machine learning. Terbiasa bekerja dengan Python, SQL, Excel, dan Power BI untuk mengubah data mentah menjadi insight yang mudah dipahami dan siap dipakai untuk pengambilan keputusan.</p>
+    </div>
+  </section> -->
+
+  <section id="portfolio" class="px-4 py-20 sm:py-24">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal text-center">
+        <h2 class="text-3xl font-bold text-secondary sm:text-4xl">Portfolio</h2>
+        <!-- <p class="mt-4 text-muted-foreground">Selected data projects across analytics, dashboards, and machine learning.</p> -->
+      </div>
+      <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="reveal card-soft overflow-hidden rounded-2xl bg-white">
+          <a href="./portfolio/project-1.html" class="block">
+            <div class="aspect-[16/10] overflow-hidden bg-muted">
+              <img src="./images/Sistem Klasifikasi Diabetes.png" alt="Klasifikiasi Penyakit Diabetes" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div class="p-6">
+              <span class="badge-cat">Streamlit</span>
+              <h3 class="mt-3 text-lg font-bold text-secondary">Klasifikiasi Penyakit Diabetes</h3>
+              <p class="mt-2 text-sm text-muted-foreground">Sistem klasifikasi penyakit diabetes menggunakan algoritma AdaBoost.</p>
+              <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">Selengkapnya
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
+              </span>
+            </div>
+          </a>
+        </article>
+        <article class="reveal card-soft overflow-hidden rounded-2xl bg-white">
+          <a href="./portfolio/project-2.html" class="block">
+            <div class="aspect-[16/10] overflow-hidden bg-muted">
+              <img src="./images/Dashboard Power BI.png" alt="Dashboard Power BI" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div class="p-6">
+              <span class="badge-cat">Power BI</span>
+              <h3 class="mt-3 text-lg font-bold text-secondary">Dashboard Survey Data Profesional</h3>
+              <p class="mt-2 text-sm text-muted-foreground">Hasil survei terhadap para profesional di bidang data.</p>
+              <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">Selengkapnya
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
+              </span>
+            </div>
+          </a>
+        </article>
+        <article class="reveal card-soft overflow-hidden rounded-2xl bg-white">
+          <a href="./portfolio/project-3.html" class="block">
+            <div class="aspect-[16/10] overflow-hidden bg-muted">
+              <img src="./images/Dashboard Tableau.png" alt="Dashboard Tableau" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div class="p-6">
+              <span class="badge-cat">Tableau</span>
+              <h3 class="mt-3 text-lg font-bold text-secondary">Dashboard Penyewaan Airbnb</h3>
+              <p class="mt-2 text-sm text-muted-foreground">Rangkuman Analisis Penyewaan Airbnb.</p>
+              <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">Selengkapnya
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
+              </span>
+            </div>
+          </a>
+        </article>
+        <article class="reveal card-soft overflow-hidden rounded-2xl bg-white">
+          <a href="portfolio/project-4.html" class="block">
+            <div class="aspect-[16/10] overflow-hidden bg-muted">
+              <img src="images/Dashboard Excel.png" alt="Dashboar Excel" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div class="p-6">
+              <span class="badge-cat">Excel</span>
+              <h3 class="mt-3 text-lg font-bold text-secondary">Dashboard Penjualan Sepeda</h3>
+              <p class="mt-2 text-sm text-muted-foreground">Analisis Penjualan Sepeda Berdasar Karakteristik Pelanggan.</p>
+              <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">Selengkapnya
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
+              </span>
+            </div>
+          </a>
+        </article>
+        <article class="reveal card-soft overflow-hidden rounded-2xl bg-white">
+          <a href="./portfolio/project-5.html" class="block">
+            <div class="aspect-[16/10] overflow-hidden bg-muted">
+              <img src="./images/EDA SQL.png" alt="Data Cleaning Project" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div class="p-6">
+              <span class="badge-cat">SQL</span>
+              <h3 class="mt-3 text-lg font-bold text-secondary">Exploratory Data Analysis SQL</h3>
+              <p class="mt-2 text-sm text-muted-foreground">Exploratory Data Analysis SQL Tentang World Layoff.</p>
+              <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">Selengkapnya
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
+              </span>
+            </div>
+          </a>
+        </article>
+        <article class="reveal card-soft overflow-hidden rounded-2xl bg-white">
+          <a href="./portfolio/project-6.html" class="block">
+            <div class="aspect-[16/10] overflow-hidden bg-muted">
+              <img src="./images/EDA Python.png" alt="EDA Python" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div class="p-6">
+              <span class="badge-cat">Python</span>
+              <h3 class="mt-3 text-lg font-bold text-secondary">Exploratory Data Analysis Python</h3>
+              <p class="mt-2 text-sm text-muted-foreground">Exploratory Data Analysis Python Tentang Populasi Dunia.</p>
+              <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">Selengkapnya
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
+              </span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="border-t border-black/5 px-4 py-20 sm:py-24">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 class="text-3xl font-bold text-secondary sm:text-4xl">Contact</h2>
+      <!-- <p class="mt-4 text-muted-foreground">Terbuka untuk kolaborasi, proyek analisis data, dan kesempatan kerja.</p> -->
+      <div class="mt-10 grid gap-4 sm:grid-cols-3">
+        <a href="tel:+6283849452449" class="card-soft flex items-center gap-4 rounded-2xl bg-white p-5 text-left">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h3l1.5 4-2 1.5a11 11 0 005 5L13 11.5 17 13v3a1.5 1.5 0 01-1.7 1.5A14 14 0 013 4.7 1.5 1.5 0 014.5 3z"/></svg></span>
+          <span>
+            <span class="block text-xs font-semibold tracking-wide text-muted-foreground uppercase">Telepon</span>
+            <span class="block text-sm font-medium text-secondary">+62 838 4945 2449</span>
+          </span>
+        </a>
+        <a href="mailto:alvonsa123@gmail.com" class="card-soft flex items-center gap-4 rounded-2xl bg-white p-5 text-left">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M2.5 5.5L10 11l7.5-5.5"/></svg></span>
+          <span>
+            <span class="block text-xs font-semibold tracking-wide text-muted-foreground uppercase">Email</span>
+            <span class="block text-sm font-medium text-secondary">alvonsa123@gmail.com</span>
+          </span>
+        </a>
+        <a href="https://linkedin.com/in/krisdova-alvonsa" target="_blank" rel="noopener noreferrer" class="card-soft flex items-center gap-4 rounded-2xl bg-white p-5 text-left">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="15" height="15" rx="2.5"/><path d="M6 8.5V14M6 5.8v.01M9.5 14V8.5M9.5 11c0-1.4.9-2.5 2.2-2.5S14 9.4 14 11v3"/></svg></span>
+          <span>
+            <span class="block text-xs font-semibold tracking-wide text-muted-foreground uppercase">LinkedIn</span>
+            <span class="block text-sm font-medium text-secondary">linkedin.com/in/krisdova-alvonsa</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="bg-secondary py-8 text-center text-sm text-white/70">
+  <p>&copy; 2026 Krisdova Rio Alvonsa. All rights reserved.</p>
+</footer>
+<script src="./js/main.js"></script>
+</body>
+</html>
